@@ -416,8 +416,10 @@ em { font-style: normal; color: var(--green-main); }
   font-size: 13.5px;
   font-family: var(--font-heading);
   font-weight: 600;
+  padding-left: 16px;
+  border-left: 2px solid rgba(255,255,255,0.2);
 }
-.trust-icon { font-size: 18px; }
+.trust-item:first-child { border-left: none; padding-left: 0; }
 
 /* ── ABOUT ─────────────────────────────────── */
 .about {
@@ -689,14 +691,12 @@ em { font-style: normal; color: var(--green-main); }
 .contact-info h2 { margin: 12px 0 20px; }
 .contact-info p { color: var(--text-muted); font-size: 16px; margin-bottom: 32px; }
 
-.contact-details { display: flex; flex-direction: column; gap: 16px; }
+.contact-details { display: flex; flex-direction: column; gap: 12px; }
 .contact-detail {
-  display: flex;
-  align-items: center;
-  gap: 14px;
   font-size: 15px;
+  padding-left: 14px;
+  border-left: 3px solid var(--green-light);
 }
-.contact-icon { font-size: 22px; width: 36px; }
 .contact-detail a { color: var(--green-mid); font-weight: 600; }
 .contact-detail a:hover { color: var(--green-dark); }
 
@@ -747,8 +747,6 @@ input::placeholder, textarea::placeholder { color: var(--text-muted); }
 
 .form-success {
   display: none;
-  align-items: center;
-  gap: 12px;
   background: var(--green-pale);
   border: 1.5px solid var(--green-light);
   border-radius: var(--radius-sm);
@@ -758,8 +756,7 @@ input::placeholder, textarea::placeholder { color: var(--text-muted); }
   color: var(--green-dark);
   font-size: 15px;
 }
-.form-success.visible { display: flex; }
-.form-success span { font-size: 24px; }
+.form-success.visible { display: block; }
 
 /* ── FOOTER ────────────────────────────────── */
 .footer {
