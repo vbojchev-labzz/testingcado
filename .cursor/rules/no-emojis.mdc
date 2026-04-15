@@ -1,0 +1,8 @@
+---
+description: Do not use emojis unless explicitly requested by the user
+alwaysApply: true
+---
+
+# No Emojis
+
+Do not use emojis in any output — code, comments, commit messages, documentation, or chat responses — unless the user explicitly asks for them.
